@@ -1,24 +1,22 @@
-qiskit	                        # Core quantum circuit framework
-qiskit-aer	                    # Fast simulator for circuits, noise models
-qiskit-ibm-provider	            # Run circuits on real IBMQ devices
-qiskit-optimization	            # Useful if you later explore Grover/QAOA-style problems
-# qiskit-visualization	        # Plotting tools: circuit diagrams, histograms, Bloch spheres
-qiskit[visualization]           # Plotting tools: circuit diagrams, histograms, Bloch spheres
-qiskit-algorithms	            # Access to Shor, QFT, and VQE-type algorithms
-qiskit-nature	                # Useful for quantum chemistry problems
-qiskit-machine-learning	        # Useful for quantum ML problems
-qiskit-experiments	            # Useful for running experiments on real devices
+# Core Qiskit Framework (pinned to stable)
+qiskit[visualization]==0.45.0
 
-# qiskit-ibm-runtime	        # Useful for running jobs on real devices
-# qiskit-quantum-kernel	        # Useful for quantum kernel methods
-# qiskit-quantum-rank	        # Useful for quantum ranking methods
-# qiskit-quantum-optimization	# Useful for quantum optimization problems
+# Extensions and Tools
+qiskit-aer==0.12.0
+qiskit-ibm-provider==0.5.0
+qiskit-optimization==0.5.0
+qiskit-algorithms==0.4.0
+qiskit-nature==0.6.0
+qiskit-machine-learning==0.3.0
+qiskit-experiments==0.3.0
 
-ipywidgets
-matplotlib
-plotly
+# Visualization + Notebooks
+numpy>=1.21.0,<1.27.0  # Compatible with Qiskit
+matplotlib>=3.4.0,<3.9.0  # Ensure compatibility with Qiskit and Python
+plotly>=5.0.0,<6.0.0
+ipywidgets>=7.6.0,<9.0.0
 
-# Other useful packages
-# pennylane	                    # Hybrid quantum-classical simulation (for VQF, etc.)
-# cirq	                        # Google's quantum SDK, nice for cross-compatibility
-# pyquil	                    # Rigetti's quantum toolkit (good for QVM, QPU access via Forest SDK)
+# Optional Quantum SDKs
+# pennylane
+# cirq
+# pyquil
