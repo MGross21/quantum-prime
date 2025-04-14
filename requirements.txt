@@ -1,20 +1,16 @@
-# Core Qiskit Framework (pinned to stable)
-qiskit[visualization]==0.45.0
+# Core Qiskit with visualization tools
+qiskit[visualization]==1.0.0
 
-# Extensions and Tools
-qiskit-aer==0.12.0
-qiskit-ibm-provider==0.5.0
-qiskit-optimization==0.5.0
-qiskit-algorithms==0.4.0
-qiskit-nature==0.6.0
-qiskit-machine-learning==0.3.0
-qiskit-experiments==0.3.0
+# Extensions that are Qiskit 1.0+ compatible
+qiskit-aer==0.13.0
+qiskit-ibm-provider==0.8.0
+qiskit-machine-learning==0.8.2
 
-# Visualization + Notebooks
-numpy>=1.21.0,<1.27.0  # Compatible with Qiskit
-matplotlib>=3.4.0,<3.9.0  # Ensure compatibility with Qiskit and Python
-plotly>=5.0.0,<6.0.0
-ipywidgets>=7.6.0,<9.0.0
+# Visualization + Jupyter notebook support
+numpy==1.26.4
+matplotlib==3.8.3
+plotly==5.20.0
+ipywidgets==8.1.2
 
 # Optional Quantum SDKs
 # pennylane
